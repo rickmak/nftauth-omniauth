@@ -6,7 +6,7 @@ class SessionsController < ApplicationController
   end
 
   def create
-    user_info = request.env['omniauth.auth']
-    raise user_info # Your own session management should be placed here.
+    @omniauth = request.env['omniauth.auth'].to_hash
+    flash.now[:notice] = 'OmniAuth authentication successful.'
   end
 end
