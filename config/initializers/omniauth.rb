@@ -5,7 +5,7 @@ Rails.application.config.middleware.use OmniAuth::Builder do
     config.allowed_request_methods = %i[post get]
   end
   provider :developer
-  provider :nftauth, client_id: ENV['client_id']
+  provider :nftauth, client_id: ENV['client_id'],
     client_secret: ENV['client_secret'],
-    scope: 'openid'
+    scope: 'read'
 end
