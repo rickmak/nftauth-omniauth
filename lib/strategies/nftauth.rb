@@ -11,7 +11,9 @@ module OmniAuth
 
       info do
         {
-          email: raw_info["email"]
+          email: raw_info["email"],
+          address: raw_info["address"],
+          nfts: raw_info["nfts"],
         }
       end
 
