@@ -1,24 +1,10 @@
-# README
+## Usage
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- Spin up docker compose stack of NFTAuth
+- Start demo app:
 
-Things you may want to cover:
+```sh
+client_id=<client id> client_secret=<client secret> SSL_CERT_FILE=./localhost.crt rails s -p 3001
+```
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Visit http://localhost:3001/login
